@@ -20,3 +20,9 @@ class Test_create_place():
 
         print("Метод GET PUT")
         result_get: Response = Google_maps_api.get_new_place(place_id)
+
+        print("Метод DELETE")
+        result_delete: Response = Google_maps_api.delete_new_place(place_id)
+
+        print("Метод GET DELETE")
+        result_get: Response = Google_maps_api.get_new_place(place_id)
